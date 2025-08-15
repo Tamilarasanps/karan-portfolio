@@ -21,7 +21,6 @@ import {
 import { FaLaptopCode } from "react-icons/fa";
 import { color, motion } from "framer-motion";
 import { SiAmazon, SiAwsamplify } from "react-icons/si";
-import { label } from "framer-motion/client";
 
 // Reusable Skill Icon Component
 const SkillIcon = ({ Icon, label, color }) => {
