@@ -8,7 +8,7 @@ import About from "./component/About";
 // import Education from "./component/Education";
 // import Contact from "./component/Contact";
 import Footer from "./component/Footer";
-import Simulation from "./component/services/simulation";
+import Simulation from "./component/services/Simulation";
 import BlankLayout from "./component/services/BlankLayout";
 import ProcessPlanning from "./component/services/ProcessPlanning";
 import StripLayout from "./component/services/StripLayout";
