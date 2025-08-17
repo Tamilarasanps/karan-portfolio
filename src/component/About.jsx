@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import { Link } from "react-router-dom";
+
 
 const AboutSection = () => {
   const [isVisible, setIsVisible] = useState({});
