@@ -218,12 +218,15 @@ const DrawbeadShowcase = () => {
               style={{ animationDelay: `${index * 100}ms` }}
             >
               <div className="relative overflow-hidden">
-                <img
-                  src={simulation.image}
-                  alt={simulation.title}
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500 cursor-pointer"
-                  onClick={() => setSelectedImage(simulation)}
-                />
+                <div className="flex items-center justify-center md:w-1/2 p-4">
+                  <img
+                    src={simulation.image}
+                    alt={simulation.title}
+                    className="w-32 h-32 object-cover mt-10  rounded-lg group-hover:scale-110 transition-transform duration-500 cursor-pointer"
+                    onClick={() => setSelectedImage(simulation)}
+                  />
+                </div>
+
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                 <div className="absolute top-4 left-4">
@@ -473,7 +476,7 @@ const DrawbeadShowcase = () => {
                 </div>
 
                 {/* Text Content */}
-                <div className="p-6 flex flex-col justify-center md:w-1/2">
+                <div className="p-6 flex flex-col justify-center md:w-1/2 bg-gradient-to-r from-purple-100 to-blue-100 ">
                   {simulation.imgData && (
                     <p className="text-sm text-gray-600 mb-2">
                       {simulation.imgData}

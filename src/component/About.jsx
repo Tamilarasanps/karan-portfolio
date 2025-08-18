@@ -130,7 +130,7 @@ const AboutSection = () => {
       // name: "Bajaj Auto Ltd",
       position: "Simulation Engineer",
       // period: "Previous Role",
-      logo: "🏍️",
+      // logo: "🏍️",
       achievements: [
         "Specialized in two-wheeler component simulation",
         "Developed innovative forming solutions",
@@ -139,9 +139,9 @@ const AboutSection = () => {
     },
     {
       // name: "Mahindra",
-      position: "Engineering Consultant",
+      // position: "Engineering Consultant",
       // period: "Contract Role",
-      logo: "🚗",
+      // logo: "🚗",
       achievements: [
         "Provided expertise in commercial vehicle stamping",
         "Optimized manufacturing processes",
