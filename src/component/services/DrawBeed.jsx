@@ -21,9 +21,10 @@ import image3 from "../../assets/simulation-img/img3.png";
 import image4 from "../../assets/simulation-img/img4.png";
 import picture from "../../assets/New folder/Picture1.png";
 import part from "../../assets/New folder/PART.jpg";
-import man1 from "../../assets/New folder/m_1.1.jpg";
-import man3 from "../../assets/New folder/m_1.3.jpg";
-import man2 from "../../assets/New folder/m_1.2.png";
+import man1 from "../../assets/New folder/M_1.1.jpg";
+import man2 from "../../assets/New folder/M_1.2.PNG";
+import man3 from "../../assets/New folder/M_1.3.jpg";
+
 import aut1 from "../../assets/New folder/A_1.1.jpg";
 import aut2 from "../../assets/New folder/A_1.2.jpg";
 import aut3 from "../../assets/New folder/A_1.3.jpg";
