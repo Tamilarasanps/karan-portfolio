@@ -222,7 +222,7 @@ const DrawbeadShowcase = () => {
                   <img
                     src={simulation.image}
                     alt={simulation.title}
-                    className="w-32 h-32 object-cover mt-10  rounded-lg group-hover:scale-110 transition-transform duration-500 cursor-pointer"
+                    className="w-32 h-32 md:w-64 md:h-64 object-cover mt-10 rounded-lg group-hover:scale-110 transition-transform duration-500 cursor-pointer"
                     onClick={() => setSelectedImage(simulation)}
                   />
                 </div>
@@ -478,13 +478,13 @@ const DrawbeadShowcase = () => {
                 {/* Text Content */}
                 <div className="p-6 flex flex-col justify-center md:w-1/2 bg-gradient-to-r from-purple-100 to-blue-100 ">
                   {simulation.imgData && (
-                    <p className="text-sm text-gray-600 mb-2">
+                    <p className="text-sm text-gray-800 font-bold mb-2">
                       {simulation.imgData}
                     </p>
                   )}
 
                   {simulation.dataa && (
-                    <p className="text-sm text-gray-800 font-semibold">
+                    <p className="text-sm text-gray-600 font-semibold">
                       {simulation.dataa}
                     </p>
                   )}
