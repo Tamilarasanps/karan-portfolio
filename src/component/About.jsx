@@ -115,6 +115,9 @@ const AboutSection = () => {
     {
       name: "EATA Industries Private Limited",
       position: "Sheet Metal Stamping Simulation Engineer",
+      experience: "Experience working with Top-tier Companies",
+      compa1: "Mahindra",
+      compa2: "Bajaj Auto Ltd",
       period: "2023-2025",
       logo: "🏢",
       achievements: [
@@ -124,7 +127,7 @@ const AboutSection = () => {
       ],
     },
     {
-      name: "Bajaj Auto Ltd",
+      // name: "Bajaj Auto Ltd",
       position: "Simulation Engineer",
       // period: "Previous Role",
       logo: "🏍️",
@@ -135,7 +138,7 @@ const AboutSection = () => {
       ],
     },
     {
-      name: "Mahindra",
+      // name: "Mahindra",
       position: "Engineering Consultant",
       // period: "Contract Role",
       logo: "🚗",
@@ -305,7 +308,7 @@ const AboutSection = () => {
           <h4 className="text-xl font-bold text-slate-700 mt-6  mb-10">
             I’ve had the opportunity to contribute to projects for leading,
             top-tier companies known for their excellence in the industry.
-          </h4> 
+          </h4>
           <div className="bg-white rounded-2xl shadow-xl p-8 border border-slate-100 hover:shadow-2xl transition-all duration-300">
             <div className="space-y-8">
               {companies.map((company, index) => (
@@ -325,10 +328,44 @@ const AboutSection = () => {
                         </p>
                       </div>
                     </div>
-                    <div className="bg-gradient-to-r from-purple-100 to-blue-100 px-4 py-2 rounded-full">
-                      <span className="text-sm font-semibold text-purple-800">
-                        {company.period}
-                      </span>
+                    {company.period && (
+                      <div className="bg-gradient-to-r from-purple-100 to-blue-100 px-4 py-2 rounded-full">
+                        <span className="text-sm font-semibold text-purple-800">
+                          {company.period}
+                        </span>
+                      </div>
+                    )}
+
+                    <div className="flex flex-col gap-2 mt-2">
+                      {/* Main Experience */}
+                      {company.experience && (
+                        <div className="flex items-start gap-2">
+                          <div className="w-2 h-2 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full mt-1 flex-shrink-0"></div>
+                          <p className="text-slate-600 text-md font-bold leading-relaxed">
+                            {company.experience}
+                          </p>
+                        </div>
+                      )}
+
+                      {/* Project/Company 1 */}
+                      {company.compa1 && (
+                        <div className="flex items-start gap-2">
+                          <div className="w-2 h-2 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full mt-1 flex-shrink-0"></div>
+                          <p className="text-slate-600 font-semibold text-sm leading-relaxed">
+                            {company.compa1}
+                          </p>
+                        </div>
+                      )}
+
+                      {/* Project/Company 2 */}
+                      {company.compa2 && (
+                        <div className="flex items-start gap-2">
+                          <div className="w-2 h-2 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full mt-1 flex-shrink-0"></div>
+                          <p className="text-slate-600 font-semibold text-sm leading-relaxed">
+                            {company.compa2}
+                          </p>
+                        </div>
+                      )}
                     </div>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
