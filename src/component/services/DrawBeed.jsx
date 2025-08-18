@@ -19,7 +19,7 @@ import image1 from "../../assets/simulation-img/img1.png";
 import image2 from "../../assets/simulation-img/img2.png";
 import image3 from "../../assets/simulation-img/img3.png";
 import image4 from "../../assets/simulation-img/img4.png";
-import picture from "../../assets/New folder/picture1.png";
+import picture from "../../assets/New folder/Picture1.png";
 
 const DrawbeadShowcase = () => {
   const [isVisible, setIsVisible] = useState({});
