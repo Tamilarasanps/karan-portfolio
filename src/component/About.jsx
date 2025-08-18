@@ -265,7 +265,7 @@ const AboutSection = () => {
                 ))}
               </div>
             </div>
-
+           
             <div className="bg-white rounded-2xl shadow-xl p-8 border border-slate-100">
               <h4 className="text-xl font-semibold text-slate-800 mb-6">
                 Material Expertise

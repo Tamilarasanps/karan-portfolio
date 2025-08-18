@@ -462,9 +462,14 @@ const DrawbeadShowcase = () => {
                       onClick={() => setSelectedImage(simulation)}
                     />
 
+                    <p
+                      key={index}
+                      className="px-4 mt-10 mb-6 py-2 bg-gradient-to-r from-purple-100 to-blue-100 text-purple-800 rounded-full text-sm font-semibold"
+                    >
+                      Material Simulated: Dual Phase (DP) 590 Steel
+                    </p>
                     {/* Gradient overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-
                     {/* View Button */}
                     <button
                       onClick={() => setSelectedImage(simulation)}
