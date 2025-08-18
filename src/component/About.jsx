@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
 
-
 const AboutSection = () => {
   const [isVisible, setIsVisible] = useState({});
   const sectionRef = useRef(null);
@@ -303,6 +302,10 @@ const AboutSection = () => {
           <h3 className="text-3xl font-bold text-slate-800 mb-12 text-center">
             Professional Experience
           </h3>
+          <h4 className="text-xl font-bold text-slate-700 mt-6  mb-10">
+            I’ve had the opportunity to contribute to projects for leading,
+            top-tier companies known for their excellence in the industry.
+          </h4> 
           <div className="bg-white rounded-2xl shadow-xl p-8 border border-slate-100 hover:shadow-2xl transition-all duration-300">
             <div className="space-y-8">
               {companies.map((company, index) => (
