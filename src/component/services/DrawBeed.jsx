@@ -20,6 +20,14 @@ import image2 from "../../assets/simulation-img/img2.png";
 import image3 from "../../assets/simulation-img/img3.png";
 import image4 from "../../assets/simulation-img/img4.png";
 import picture from "../../assets/New folder/Picture1.png";
+import part from "../../assets/New folder/PART.jpg";
+import man1 from "../../assets/New folder/m_1.1.jpg";
+import man3 from "../../assets/New folder/m_1.3.jpg";
+import man2 from "../../assets/New folder/m_1.2.png";
+import aut1 from "../../assets/New folder/A_1.1.jpg";
+import aut2 from "../../assets/New folder/A_1.2.jpg";
+import aut3 from "../../assets/New folder/A_1.3.jpg";
+import aut from "../../assets/New folder/A.jpg";
 
 const DrawbeadShowcase = () => {
   const [isVisible, setIsVisible] = useState({});
@@ -35,7 +43,7 @@ const DrawbeadShowcase = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  const pic = picture;
+  const pic = part;
   const datas = [
     {
       id: 1,
@@ -50,7 +58,7 @@ const DrawbeadShowcase = () => {
   const aPillarSimulationData = [
     {
       id: 1,
-      image: mannual,
+      image: man1,
       title: "Manual A-Pillar Drawbead Setup",
       description:
         "Traditional manual placement of drawbeads for A-Pillar forming with precise geometric control and operator-defined parameters.",
@@ -68,7 +76,7 @@ const DrawbeadShowcase = () => {
     },
     {
       id: 2,
-      image: mannual1,
+      image: man2,
       image2: mannual2,
       title: "Manual A-Pillar Formation Results",
       description:
@@ -87,7 +95,7 @@ const DrawbeadShowcase = () => {
     },
     {
       id: 3,
-      image: mannual2,
+      image: man3,
       title: "Manual A-Pillar Springback Evaluation",
       description:
         "Detailed springback analysis performed after manual drawbead setup, helping assess form accuracy and die compensation needs.",
@@ -105,7 +113,7 @@ const DrawbeadShowcase = () => {
     },
     {
       id: 4,
-      image: auto,
+      image: aut1,
       title: "AutoForm A-Pillar Optimization",
       description:
         "Intelligent automated drawbead placement using AutoForm's advanced algorithms for optimal A-Pillar forming performance.",
@@ -123,7 +131,7 @@ const DrawbeadShowcase = () => {
     },
     {
       id: 5,
-      image: auto1,
+      image: aut2,
       title: "Optimized A-Pillar Formation",
       description:
         "Superior formation results achieved through AutoForm's intelligent optimization, demonstrating enhanced material utilization and quality.",
@@ -141,7 +149,7 @@ const DrawbeadShowcase = () => {
     },
     {
       id: 6,
-      image: auto2,
+      image: aut3,
       title: "A-Pillar Robustness Validation with AutoForm",
       description:
         "Final validation of A-Pillar performance across varying conditions using AutoForm’s robustness tools to ensure repeatability and quality.",
@@ -431,54 +439,59 @@ const DrawbeadShowcase = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
+        <div className="flex flex-col gap-8 mb-10">
           {datas.map((simulation, index) => (
             <div
               key={simulation.id}
               className="group bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              {/* Image Section */}
-              <div className="relative overflow-hidden">
-                <img
-                  src={simulation.img}
-                  alt={simulation.title}
-                  className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500 cursor-pointer"
-                  onClick={() => setSelectedImage(simulation)}
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              {/* Container for image and content side by side on md+ */}
+              <div className="flex flex-col md:flex-row">
+                {/* Image Section */}
+                <div className="relative md:w-1/2 flex items-center justify-center bg-gray-50">
+                  <div className="relative">
+                    <img
+                      src={simulation.img}
+                      alt={simulation.title}
+                      className="w-64 h-64 object-cover group-hover:scale-110 transition-transform duration-500 cursor-pointer"
+                      onClick={() => setSelectedImage(simulation)}
+                    />
 
-                {/* View Button */}
-                <button
-                  onClick={() => setSelectedImage(simulation)}
-                  className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-white/30"
-                >
-                  <Eye className="w-5 h-5" />
-                </button>
-              </div>
+                    {/* Gradient overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-              {/* Text Content */}
-              <div className="p-6">
-                {/* Simulation Title or Info */}
-                {simulation.imgData && (
-                  <p className="text-sm text-gray-600 mb-2">
-                    {simulation.imgData}
-                  </p>
-                )}
+                    {/* View Button */}
+                    <button
+                      onClick={() => setSelectedImage(simulation)}
+                      className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-white/30"
+                    >
+                      <Eye className="w-5 h-5" />
+                    </button>
+                  </div>
+                </div>
 
-                {/* Part Description */}
-                {simulation.dataa && (
-                  <p className="text-sm text-gray-800 font-semibold">
-                    {simulation.dataa}
-                  </p>
-                )}
+                {/* Text Content */}
+                <div className="p-6 flex flex-col justify-center md:w-1/2">
+                  {simulation.imgData && (
+                    <p className="text-sm text-gray-600 mb-2">
+                      {simulation.imgData}
+                    </p>
+                  )}
+
+                  {simulation.dataa && (
+                    <p className="text-sm text-gray-800 font-semibold">
+                      {simulation.dataa}
+                    </p>
+                  )}
+                </div>
               </div>
             </div>
           ))}
         </div>
 
         {/* Technology Cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
+        <div className="grid grid-cols-1  gap-12 mb-20">
           <TechCard
             icon={<Wrench />}
             title="Manual Drawbeads"
