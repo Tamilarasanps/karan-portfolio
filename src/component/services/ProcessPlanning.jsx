@@ -133,7 +133,7 @@ export default function ProcessPlanning() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="bg-gradient-to-r from-purple-600 to-blue-600 rounded-2xl p-8 text-white">
+          <div className="bg-gradient-to-r from-blue-600 to-red-600 rounded-2xl p-8 text-white">
             <h3 className="text-2xl font-bold mb-6">
               Process Planning Benefits
             </h3>

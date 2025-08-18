@@ -89,7 +89,7 @@ export default function StripLayout() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="bg-gradient-to-r from-purple-600 to-blue-600 rounded-2xl p-8 text-white">
+          <div className="bg-gradient-to-r from-blue-600 to-red-600 rounded-2xl p-8 text-white">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
               <div>
                 <div className="text-3xl font-bold mb-2">20%</div>

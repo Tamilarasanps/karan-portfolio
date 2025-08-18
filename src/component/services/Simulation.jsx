@@ -5,6 +5,11 @@ import image2 from "../../assets/simulation-img/img2.png"; // Import the image
 import image3 from "../../assets/simulation-img/img3.png"; // Import the image
 import image4 from "../../assets/simulation-img/img4.png"; // Import the image
 
+import mannual from "../../assets/New folder/manual.png";
+import mannual1 from "../../assets/New folder/manual1.png";
+import auto from "../../assets/New folder/auto.png";
+import auto1 from "../../assets/New folder/auto1.png";
+
 const img1 = image1;
 const img2 = image2;
 const img3 = image3;
@@ -269,6 +274,35 @@ export default function Simulation() {
               systems, ensuring optimal material behavior across all forming
               scenarios.
             </p>
+            <p className="text-lg font-bold text-slate-700 max-w-3xl mx-auto leading-relaxed mt-10">
+              The follwing A-pillar part output shows my bead placement strotegy
+              & intelligence
+            </p>
+          </div>
+          <div className="">
+            <h1 className="font-bold text-xl mt-10 ml-6">
+              Manual Drawing Input
+            </h1>
+            <img src={mannual} alt="Manual drawing input" />
+
+            <h1 className="font-bold text-xl mt-10 ml-6">
+              Corresponding Output
+            </h1>
+            <img
+              src={mannual1}
+              alt="Output for manual drawing"
+              className="mb-10"
+            />
+          </div>
+
+          <div className="">
+            <h1 className="font-bold text-xl mt-10 ml-6">Auto Drawing Input</h1>
+            <img src={auto} alt="Auto drawing input" />
+
+            <h1 className="font-bold text-xl mt-10 ml-6">
+              Corresponding Output
+            </h1>
+            <img src={auto1} alt="Output for auto drawing" className="mb-10" />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
@@ -345,7 +379,7 @@ export default function Simulation() {
         </div>
 
         {/* Simulation Gallery */}
-        <div
+        {/* <div
           id="animate-gallery"
           className={`mb-16 transition-all duration-1000 delay-400 ${
             isVisible["animate-gallery"]
@@ -425,7 +459,7 @@ export default function Simulation() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Results & Impact */}
         <div
@@ -436,7 +470,7 @@ export default function Simulation() {
               : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="bg-gradient-to-r from-purple-600 to-blue-600 rounded-2xl p-8 text-white">
+          <div className="bg-gradient-to-r from-blue-600 to-red-600 rounded-2xl p-8 text-white">
             <h3 className="text-2xl font-bold mb-6">Proven Results & Impact</h3>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
               <div className="text-center">

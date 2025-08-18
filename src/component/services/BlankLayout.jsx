@@ -268,7 +268,7 @@ export default function BlankLayout() {
               : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="bg-gradient-to-r from-purple-600 to-blue-600 rounded-2xl p-8 text-white text-center">
+          <div className="bg-gradient-to-r from-blue-600 to-red-600 rounded-2xl p-8 text-white text-center">
             <h2 className="text-2xl font-bold mb-4">
               Precision-Driven Blank Layout Solutions
             </h2>

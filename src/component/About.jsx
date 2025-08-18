@@ -125,7 +125,7 @@ const AboutSection = () => {
       ],
     },
     {
-      // name: "Bajaj Auto Ltd",
+      name: "Bajaj Auto Ltd",
       position: "Simulation Engineer",
       // period: "Previous Role",
       logo: "🏍️",
@@ -136,7 +136,7 @@ const AboutSection = () => {
       ],
     },
     {
-      // name: "Mahindra",
+      name: "Mahindra",
       position: "Engineering Consultant",
       // period: "Contract Role",
       logo: "🚗",
@@ -396,10 +396,10 @@ const AboutSection = () => {
                   </Link>
                   "/BlankLayout"
                 </div> */}
-                <div className="bg-purple-600 text-white py-2 px-6 rounded-full hover:bg-purple-700 transition-all duration-300 mt-6 text-center">
+                {/* <div className="bg-purple-600 text-white py-2 px-6 rounded-full hover:bg-purple-700 transition-all duration-300 mt-6 text-center">
                   {" "}
                   <h2>View More</h2>
-                </div>
+                </div> */}
               </div>
             ))}
           </div>
@@ -414,7 +414,7 @@ const AboutSection = () => {
               : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="bg-gradient-to-r from-purple-600 to-blue-600 rounded-2xl p-8 text-white">
+          <div className="bg-gradient-to-r from-blue-600 to-red-600 rounded-2xl p-8 text-white">
             <h3 className="text-2xl font-bold mb-4">
               Ready to Optimize Your Manufacturing Process?
             </h3>
