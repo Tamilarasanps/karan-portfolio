@@ -9,6 +9,7 @@ import mannual from "../../assets/New folder/manual.png";
 import mannual1 from "../../assets/New folder/manual1.png";
 import auto from "../../assets/New folder/auto.png";
 import auto1 from "../../assets/New folder/auto1.png";
+import DrawbeadShowcase from "./DrawBeed";
 
 const img1 = image1;
 const img2 = image2;
@@ -255,7 +256,7 @@ export default function Simulation() {
         </div>
 
         {/* Drawbeads Expertise Section */}
-        <div
+        {/* <div
           id="animate-drawbeads"
           className={`mb-16 transition-all duration-1000 delay-300 ${
             isVisible["animate-drawbeads"]
@@ -280,33 +281,7 @@ export default function Simulation() {
             </p>
           </div>
           <div className="">
-            <h1 className="font-bold text-xl mt-10 ml-6">
-              Manual Drawing Input
-            </h1>
-            <img src={mannual} alt="Manual drawing input" />
-
-            <h1 className="font-bold text-xl mt-10 ml-6">
-              Corresponding Output
-            </h1>
-            <img
-              src={mannual1}
-              alt="Output for manual drawing"
-              className="mb-10"
-            />
-          </div>
-
-          <div className="">
-            <h1 className="font-bold text-xl mt-10 ml-6">Auto Drawing Input</h1>
-            <img src={auto} alt="Auto drawing input" />
-
-            <h1 className="font-bold text-xl mt-10 ml-6">
-              Corresponding Output
-            </h1>
-            <img src={auto1} alt="Output for auto drawing" className="mb-10" />
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-            <div className="bg-white rounded-2xl shadow-xl p-8 border border-slate-100 hover:shadow-2xl transition-all duration-300">
+            <div className="bg-white rounded-2xl shadow-xl mb-10   p-8 border border-slate-100 hover:shadow-2xl transition-all duration-300">
               <div className="flex items-center mb-6">
                 <span className="text-4xl mr-4">🔧</span>
                 <div>
@@ -340,8 +315,20 @@ export default function Simulation() {
                 ))}
               </ul>
             </div>
+            <img src={mannual} alt="Manual drawing input" />
 
-            <div className="bg-white rounded-2xl shadow-xl p-8 border border-slate-100 hover:shadow-2xl transition-all duration-300">
+            <h1 className="font-bold text-xl mt-10 ml-6">
+              Corresponding Output
+            </h1>
+            <img
+              src={mannual1}
+              alt="Output for manual drawing"
+              className="mb-10"
+            />
+          </div>
+
+          <div className="">
+            <div className="bg-white rounded-2xl  mb-10 shadow-xl p-8 border border-slate-100 hover:shadow-2xl transition-all duration-300">
               <div className="flex items-center mb-6">
                 <span className="text-4xl mr-4">🤖</span>
                 <div>
@@ -375,8 +362,18 @@ export default function Simulation() {
                 ))}
               </ul>
             </div>
+            <img src={auto} alt="Auto drawing input" />
+
+            <h1 className="font-bold text-xl mt-10 ml-6">
+              Corresponding Output
+            </h1>
+            <img src={auto1} alt="Output for auto drawing" className="mb-10" />
           </div>
-        </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12"></div>
+        </div> */}
+
+        <DrawbeadShowcase />
 
         {/* Simulation Gallery */}
         {/* <div
