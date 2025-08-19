@@ -243,7 +243,7 @@ const DrawbeadShowcase = () => {
 
                 <button
                   onClick={() => setSelectedImage(simulation)}
-                  className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-white/30"
+                  className="absolute top-4 right-4 bg-black/20 backdrop-blur-sm text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-black/50"
                 >
                   <Eye className="w-5 h-5" />
                 </button>
@@ -373,7 +373,7 @@ const DrawbeadShowcase = () => {
           onClick={onClose}
           className="absolute top-4 right-4 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-2 rounded-full z-10 transition-all duration-300"
         >
-          <X className="w-6 h-6" />
+          <X className="w-6 h-6 bg-red-600" />
         </button>
         <div className="p-4">
           <h3 className="text-xl font-bold text-gray-800 mb-4">
@@ -459,7 +459,7 @@ const DrawbeadShowcase = () => {
                       src={simulation.img}
                       alt={simulation.title}
                       className="w-64 h-64 object-cover group-hover:scale-110 transition-transform duration-500 cursor-pointer"
-                      onClick={() => setSelectedImage(simulation)}
+                      onClick={() => setSelectedImage(simulation.img)}
                     />
 
                     <p
@@ -473,9 +473,9 @@ const DrawbeadShowcase = () => {
                     {/* View Button */}
                     <button
                       onClick={() => setSelectedImage(simulation)}
-                      className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-white/30"
+                      className="absolute top-4 right-4 bg-black/30 backdrop-blur-sm text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-black/50"
                     >
-                      <Eye className="w-5 h-5" />
+                      <Eye className="w-5 h-5 " />
                     </button>
                   </div>
                 </div>

@@ -34,7 +34,10 @@ export default function ProcessPlanning() {
   ];
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 py-20 px-6 sm:px-16">
+    <section
+      className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 py-20 px-6 sm:px-16"
+      id="process-planning"
+    >
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div

@@ -54,7 +54,7 @@ const Header = () => {
         className={`transition-all duration-300 px-6 py-4 ${
           isScrolled
             ? "bg-white/95 backdrop-blur-md shadow-lg"
-            : "bg-gradient-to-r from-purple-600 via-blue-600 to-indigo-600 shadow-md"
+            : "bg-gradient-to-r from-red-600 to-blue-600 to-indigo-600 shadow-md"
         }`}
       >
         <div className="max-w-7xl mx-auto flex items-center justify-between">

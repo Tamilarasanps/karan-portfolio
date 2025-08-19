@@ -12,6 +12,7 @@ import Simulation from "./component/services/Simulation";
 import BlankLayout from "./component/services/BlankLayout";
 import ProcessPlanning from "./component/services/ProcessPlanning";
 import StripLayout from "./component/services/StripLayout";
+import Contact from "./component/Contact";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
       <Projects />
       <Education />
       <Contact /> */}
+      <Contact />
       <Footer />
     </>
   );

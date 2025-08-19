@@ -13,7 +13,10 @@ export default function StripLayout() {
   }, []);
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 py-20 px-6 sm:px-16">
+    <section
+      className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 py-20 px-6 sm:px-16"
+      id="strip-layout"
+    >
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div
