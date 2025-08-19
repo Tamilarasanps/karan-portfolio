@@ -239,33 +239,20 @@ const AboutSection = () => {
               <h4 className="text-xl font-semibold text-slate-800 mb-6">
                 Core Competencies
               </h4>
-              <div className="space-y-6">
+              <div className="space-y-6 ">
                 {skills.map((skill, index) => (
                   <div key={skill.name} className="relative">
-                    <div className="flex justify-between items-center mb-2">
-                      <span className="font-medium text-slate-700">
+                    {/* flex justify-center items-center */}
+                    <div className="flex justify-center  mb-2 bg-gradient-to-br from-blue-50 to-purple-50 p-3 rounded-md">
+                      <span className="font-medium text-purple-800  flex items-center">
                         {skill.name}
                       </span>
-                      <span className="text-sm font-bold text-slate-600">
-                        {skill.level}%
-                      </span>
-                    </div>
-                    <div className="w-full bg-slate-200 rounded-full h-3 overflow-hidden">
-                      <div
-                        className={`h-full bg-gradient-to-r ${skill.color} rounded-full transition-all duration-1000 ease-out`}
-                        style={{
-                          width: isVisible["animate-skills"]
-                            ? `${skill.level}%`
-                            : "0%",
-                          transitionDelay: `${index * 100}ms`,
-                        }}
-                      />
                     </div>
                   </div>
                 ))}
               </div>
             </div>
-           
+
             <div className="bg-white rounded-2xl shadow-xl p-8 border border-slate-100">
               <h4 className="text-xl font-semibold text-slate-800 mb-6">
                 Material Expertise
