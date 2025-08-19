@@ -243,8 +243,8 @@ const AboutSection = () => {
                 {skills.map((skill, index) => (
                   <div key={skill.name} className="relative">
                     {/* flex justify-center items-center */}
-                    <div className="flex justify-center  mb-2 bg-gradient-to-br from-blue-50 to-purple-50 p-3 rounded-md">
-                      <span className="font-medium text-purple-800  flex items-center">
+                    <div className="flex justify-center  mb-2 bg-gradient-to-r from-red-600    to-blue-600 p-3 rounded-full">
+                      <span className="font-medium text-white  ">
                         {skill.name}
                       </span>
                     </div>
