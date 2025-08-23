@@ -25,7 +25,7 @@ import man1 from "../../assets/New folder/M_1.1.jpg";
 import man2 from "../../assets/New folder/M_1.2.PNG";
 import man3 from "../../assets/New folder/M_1.3.jpg";
 import man0 from "../../assets/New folder/M.jpg";
-import aut0 from "../../assets/New folder/A.jpg";
+import aut0 from "../../assets/New folder/aa.jpg";
 
 import aut1 from "../../assets/New folder/A_1.1.jpg";
 import aut2 from "../../assets/New folder/A_1.2.jpg";
