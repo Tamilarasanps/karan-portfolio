@@ -1,4 +1,18 @@
 import React, { useEffect, useState, useRef } from "react";
+import {
+  Wrench,
+  Settings,
+  TrendingUp,
+  Layers,
+  ClipboardList,
+  Recycle,
+} from "lucide-react";
+import img1 from "../assets/skills/a.jpg";
+import img2 from "../assets/skills/b.jpg";
+import img3 from "../assets/skills/c.jpg";
+import img4 from "../assets/skills/d.jpg";
+import img5 from "../assets/skills/e.jpg";
+import img6 from "../assets/skills/f.png";
 
 const AboutSection = () => {
   const [isVisible, setIsVisible] = useState({});
@@ -31,23 +45,43 @@ const AboutSection = () => {
       name: "CATIA V5 Modeling",
       level: 95,
       color: "from-blue-500 to-blue-600",
+      icon: Wrench, // 3D modeling or mechanical
+      img: img6,
     },
     {
       name: "AutoForm Simulation",
       level: 90,
       color: "from-purple-500 to-purple-600",
+      icon: Settings, // Simulation/Settings
+      img: img1,
     },
-    { name: "FLD Analysis", level: 88, color: "from-green-500 to-green-600" },
-    { name: "Die Tool Design", level: 85, color: "from-red-500 to-red-600" },
+    {
+      name: "FLD Analysis",
+      level: 88,
+      color: "from-green-500 to-green-600",
+      icon: TrendingUp, // Analysis/Graphs
+      img: img3,
+    },
+    {
+      name: "Die Tool Design",
+      level: 85,
+      color: "from-red-500 to-red-600",
+      icon: Layers, // Tools/Design
+      img: img5,
+    },
     {
       name: "Process Planning",
       level: 82,
       color: "from-yellow-500 to-yellow-600",
+      icon: ClipboardList, // Planning
+      img: img2,
     },
     {
       name: "Material Optimization",
       level: 87,
       color: "from-indigo-500 to-indigo-600",
+      icon: Recycle, // Optimization
+      img: img4,
     },
   ];
 
@@ -243,8 +277,13 @@ const AboutSection = () => {
                 {skills.map((skill, index) => (
                   <div key={skill.name} className="relative">
                     {/* flex justify-center items-center */}
-                    <div className="flex justify-center  mb-2 bg-gradient-to-r from-red-600    to-blue-600 p-3 rounded-full">
-                      <span className="font-medium text-white  ">
+                    <div className="relative flex items-center mb-2 bg-gradient-to-r from-red-600 to-blue-600 p-3 rounded-full">
+                      <img
+                        src={skill.img}
+                        alt="logo"
+                        className="w-10 h-10 absolute left-1 rounded-full"
+                      />
+                      <span className="font-medium text-white mx-auto">
                         {skill.name}
                       </span>
                     </div>

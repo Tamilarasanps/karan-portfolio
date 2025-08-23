@@ -24,6 +24,8 @@ import part from "../../assets/New folder/PART.jpg";
 import man1 from "../../assets/New folder/M_1.1.jpg";
 import man2 from "../../assets/New folder/M_1.2.PNG";
 import man3 from "../../assets/New folder/M_1.3.jpg";
+import man0 from "../../assets/New folder/M.jpg";
+import aut0 from "../../assets/New folder/A.jpg";
 
 import aut1 from "../../assets/New folder/A_1.1.jpg";
 import aut2 from "../../assets/New folder/A_1.2.jpg";
@@ -317,6 +319,7 @@ const DrawbeadShowcase = () => {
     features,
     gradientFrom,
     gradientTo,
+    image,
     isManual = false,
   }) => (
     <div className="bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100 hover:shadow-3xl transition-all duration-500 hover:-translate-y-2">
@@ -327,6 +330,7 @@ const DrawbeadShowcase = () => {
           >
             {icon}
           </div>
+
           <div>
             <h3 className="text-2xl font-bold text-gray-800 mb-1">{title}</h3>
             <p
@@ -340,7 +344,11 @@ const DrawbeadShowcase = () => {
         <p className="text-gray-600 mb-6 leading-relaxed text-lg">
           {description}
         </p>
-
+        <img
+          src={image}
+          alt="manual"
+          className="mx-auto w-full max-w-md h-auto mb-10 rounded-md"
+        />
         <div className="grid grid-cols-2 gap-3 mb-8">
           {features.map((feature, index) => (
             <div key={index} className="flex items-center group">
@@ -510,6 +518,7 @@ const DrawbeadShowcase = () => {
             gradientFrom="from-purple-500"
             gradientTo="to-pink-500"
             isManual={true}
+            image={man0}
           />
 
           <TechCard
@@ -521,6 +530,7 @@ const DrawbeadShowcase = () => {
             gradientFrom="from-blue-500"
             gradientTo="to-cyan-500"
             isManual={false}
+            image={aut0}
           />
         </div>
 
