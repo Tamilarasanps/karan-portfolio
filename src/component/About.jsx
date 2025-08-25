@@ -158,25 +158,8 @@ const AboutSection = () => {
         "Led simulation projects for automotive stamping components",
         "Optimized die designs resulting in 15% material savings",
         "Implemented advanced FLD analysis protocols",
-      ],
-    },
-    {
-      // name: "Bajaj Auto Ltd",
-      position: "Simulation Engineer",
-      // period: "Previous Role",
-      // logo: "🏍️",
-      achievements: [
-        "Specialized in two-wheeler component simulation",
         "Developed innovative forming solutions",
         "Collaborated with cross-functional engineering teams",
-      ],
-    },
-    {
-      // name: "Mahindra",
-      // position: "Engineering Consultant",
-      // period: "Contract Role",
-      // logo: "🚗",
-      achievements: [
         "Provided expertise in commercial vehicle stamping",
         "Optimized manufacturing processes",
         "Reduced production cycle time by 20%",
